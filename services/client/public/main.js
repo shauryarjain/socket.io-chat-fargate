@@ -216,7 +216,7 @@ Vue.component('room-details', {
     <img :src="activeRoom.image" alt="" class='description' />
     <p>{{ activeRoom.name }}</p>
     <div class='online-count dropdown'>
-      {{ state.presentCount }} online
+      {{ state.presentCount }} users are online
       <transition name='fade' appear>
         <ul class="dropdown-menu" v-if="events.length > 0" style='display: block;'>
           <template v-for='(event, index) in events'>
